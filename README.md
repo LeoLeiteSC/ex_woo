@@ -23,3 +23,19 @@ config :ex_woo,
   key: "Your Customer Key",
   secret: "Your Customer Secret"
 ```
+
+## Example
+
+`config.exs`:
+```elixir
+config :ex_woo,
+  base_url: "https://mysite.com/wp-json/wc/v3",
+  key: "my_key",
+  secret: "my_secret"
+```
+
+In your program:
+```elixir
+# To list all customers
+ExWoo.get("/customers")
+```
