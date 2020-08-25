@@ -9,7 +9,7 @@ defmodule ExWoo do
     Response,
   }
 
-  def get(url, params, client \\ Client.build_client()), do: request(:get, url, params, client)
+  def get(url, params \\ %{}, client \\ Client.build_client()), do: request(:get, url, params, client)
 
   def post(url, params, client \\ Client.build_client()), do: request(:post, url, params, client)
 
