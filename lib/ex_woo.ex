@@ -9,9 +9,15 @@ defmodule ExWoo do
     Response,
   }
 
-  def create(url, params, client \\ Client.build_client()), do: request(:post, url, params, client)
-
   def get(url, params, client \\ Client.build_client()), do: request(:get, url, params, client)
+
+  def post(url, params, client \\ Client.build_client()), do: request(:post, url, params, client)
+
+  def delete(url, params, client \\ Client.build_client()), do: request(:delete, url, params, client)
+
+  def patch(url, params, client \\ Client.build_client()), do: request(:patch, url, params, client)
+
+  def put(url, params, client \\ Client.build_client()), do: request(:put, url, params, client)
 
   defp request(method, url, params, client) do
     client
