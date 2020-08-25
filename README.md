@@ -1,6 +1,6 @@
 # ExWoo
 
-**TODO: Add description**
+This is a library that makes simple requests to the WooCommerce API.
 
 ## Installation
 
@@ -15,7 +15,11 @@ def deps do
 end
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/ex_woo](https://hexdocs.pm/ex_woo).
+Add this configurations to your `config.exs` file:
 
+```elixir
+config :ex_woo,
+  base_url: "Your site URL",
+  key: "Your Customer Key",
+  secret: "Your Customer Secret"
+```
