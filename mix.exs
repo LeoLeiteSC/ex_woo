@@ -24,7 +24,7 @@ defmodule ExWoo.MixProject do
       # API
       {:tesla, "~> 1.3.0"},
       {:jason, "~> 1.2.0"},
-      {:hackney, "~> 1.15.2"},
+      {:hackney, "~> 1.17"},
     ]
   end
 end
